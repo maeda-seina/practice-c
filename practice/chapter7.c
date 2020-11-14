@@ -8,13 +8,13 @@ int main(void)
     scanf("%d", &year);
     y1 = year % 4;
     y2 = year % 2;
-    if (year <= 1894)
+    if (year < 1894)
         printf("まだ開かれてない");
     if (year >= 1894 && y1 == 0)
         printf("夏季オリンピックが開かれる。");
     if (year >= 1924 && y2 == 0 && y1 != 0)
         printf("冬季オリンピックが開かれる。");
-    if (y2 != 0)
+    if (year >= 1894 && y2 != 0)
         printf("オリンピックは開かれない。");
     return 0;
 }
