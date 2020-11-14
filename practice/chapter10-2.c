@@ -48,8 +48,7 @@ int main(void)
     do {
         printf("半径？:");
         scanf("%d", &r);
-    }  while (r < 0);
-    // この;を忘れない！！！
+    }  while (r < 0);// この;を忘れない！！！
 
     s = r * r * 3.14;
     printf("面積は%fです。\n", s);
